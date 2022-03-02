@@ -1,0 +1,65 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--fourth-color);
+    border-radius: 0.8rem;
+    padding: 2rem;
+    box-shadow:
+        5.1px 3.3px 2.7px rgba(0, 0, 0, 0.037),
+        12.9px 8.3px 6.9px rgba(0, 0, 0, 0.053),
+        26.4px 16.8px 14.2px rgba(0, 0, 0, 0.067),
+        54.4px 34.7px 29.2px rgba(0, 0, 0, 0.083),
+        149px 95px 80px rgba(0, 0, 0, 0.12);
+}
+
+.inputContainer {
+    margin-bottom: 2rem;
+    color: var(--main-color);
+}
+
+.input {
+    border: 0.5px solid var(--second-color);
+    border-radius: var(--default-border-radius);
+    padding: 0.5rem 1rem;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1rem;
+}
+
+.inputCheckbox {
+    padding: 1rem;
+}
+
+.inputContainer>input {
+    margin-left: 1rem;
+}
+
+.answersContainer {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.8rem;
+}
+
+.answerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.answerContainerFirstSection {
+    flex: 2;
+    text-align: center;
+}
+
+
+.answerContainerSecondSection {
+    flex: 16;
+}
+
+.conditionalSection {
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}

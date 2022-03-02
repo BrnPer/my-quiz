@@ -1,0 +1,57 @@
+:root {
+  --main-color: hsla(212, 66%, 50%, 1);
+  --second-color: hsla(228, 58%, 20%, 1);
+  --third-color: #F03A47;
+  --fourth-color: #F6F4F3;
+  --fifth-color: #af5b5b;
+  --right-color: hsla(130, 50%, 55%, 1);
+  --wrong-color: #F03A47;
+  --default-border-radius: 0.8rem;
+}
+
+html,
+body, #__next {
+  padding: 0;
+  margin: 0;
+  font-family: 'Fredoka', sans-serif;
+  background-color: var(--main-color);
+  color: var(--second-color);
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  box-shadow:
+    5.1px 3.3px 2.7px rgba(0, 0, 0, 0.037),
+    12.9px 8.3px 6.9px rgba(0, 0, 0, 0.053),
+    26.4px 16.8px 14.2px rgba(0, 0, 0, 0.067),
+    54.4px 34.7px 29.2px rgba(0, 0, 0, 0.083),
+    149px 95px 80px rgba(0, 0, 0, 0.12);
+  color: var(--second-color);
+  background-color: var(--fourth-color);
+  padding: 1rem 2rem;
+  border-radius: var(--default-border-radius);
+  border: 1px solid transparent;
+  font-size: 1.4rem;
+  margin: 1rem;
+  font-family: 'Fredoka', sans-serif;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color linear 0.2s;
+}
+
+button:hover {
+  background-color: var(--second-color);
+  color: var(--fourth-color);
+  border-color: var(--fourth-color);
+  border: 1px solid;
+}
