@@ -9,21 +9,28 @@
 }
 
 .question {
+    flex: 1;
     color: var(--fourth-color);
-    font-size: 4rem;
-    margin-bottom: 5rem;
+    font-size: 2rem;
     font-weight: 400;
-}
-
-.answersContainer {
+    text-align: center;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
+.answersContainer {
+    flex: 4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+    width: 100%;
+}
+
 .answer {
-    flex: 1 1 33vw;
     box-shadow:
         5.1px 3.3px 2.7px rgba(0, 0, 0, 0.037),
         12.9px 8.3px 6.9px rgba(0, 0, 0, 0.053),
@@ -32,26 +39,56 @@
         149px 95px 80px rgba(0, 0, 0, 0.12);
     color: var(--second-color);
     background-color: var(--fourth-color);
-    padding: 1.5rem 2rem;
+    padding: 0.9rem 1rem;
     border-radius: var(--default-border-radius);
     border: 1rem solid transparent;
     font-size: 1.4rem;
-    margin: 1rem;
     font-family: 'Fredoka', sans-serif;
     cursor: pointer;
     font-weight: 500;
     transition: background-color linear 0.2s;
     text-align: center;
+    width: 100%;
 }
 
 .answerRight {
-    border-color: var(--right-color);
-    border-width: 1rem;
-    color: var(--right-color);
+    background-color: var(--right-color);
+    color: white;
 }
 
 .answerWrong {
-    border-color: var(--wrong-color);
-    border-width: 1rem;
-    color: var(--wrong-color);
+    background-color: var(--wrong-color);
+    color: white;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .question {
+        flex: 2;
+        align-items: flex-end;
+    }
+
+    .answersContainer {
+        flex: 5;
+        flex-direction: row;
+        align-content: center;
+        gap: 2rem;
+    }
+
+    .answer {
+        width: 40%;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+    
+
+    .answersContainer {
+       width: 80%;
+    }
+
+    .answer {
+        width: 40%;
+    }
 }

@@ -11,8 +11,7 @@ export default function GameScreen() {
                     <Answer text='Yes' isCorrect={true} />
                     <Answer text='No' />
                     <Answer text='Maybe' />
-                    <Answer text="Always" />
-                    <Answer text="Nope!" />
+                    <Answer text="Always" />                    
                 </div>
             </div>
         </Layout>
