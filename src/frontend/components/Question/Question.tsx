@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './Question.module.css';
 import Answer from "./Answer";
 
@@ -7,6 +7,7 @@ export interface QuestionProps {
     answers: string[],
     rightAnswer: number,
     answered: (wasRight: boolean) => void;
+    reset: boolean
 }
 
 export default function Question(props: QuestionProps) {
@@ -33,6 +34,16 @@ export default function Question(props: QuestionProps) {
         if (answerClicked == id && id != props.rightAnswer) return true;
         return false;
     }
+
+    useEffect(() => {
+        if (props.reset === true) {
+            setClickable(true);
+            setAnswerClicked(null);
+        }
+
+        return () => { }
+    }, [props.reset])
+
 
     return (
         <div className={styles.container}>
