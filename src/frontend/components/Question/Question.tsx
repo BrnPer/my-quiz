@@ -5,7 +5,8 @@ import Answer from "./Answer";
 export interface QuestionProps {
     text: string,
     answers: string[],
-    rightAnswer: number
+    rightAnswer: number,
+    answered: (wasRight: boolean) => void;
 }
 
 export default function Question(props: QuestionProps) {
@@ -13,9 +14,10 @@ export default function Question(props: QuestionProps) {
     const [clickable, setClickable] = useState<boolean>(true);
     const [answerClicked, setAnswerClicked] = useState<number | null>(null);
 
-    const onAnswerClick = (text: string, id: number) => {        
+    const onAnswerClick = (text: string, id: number) => {
         setClickable(false);
         setAnswerClicked(id);
+        props.answered(id === props.rightAnswer);
     }
 
     const shouldShowRight = (id: number): boolean => {
