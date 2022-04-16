@@ -1,0 +1,90 @@
+.gameScreenContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.totalQuestions {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+.currentQuestion {
+    font-weight: 700;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+}
+
+.gameContainer {
+    flex: 7;
+    width: 100%;
+}
+
+.gameFooter {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.rightColor {
+    color: var(--right-color);
+}
+
+.wrongColor {
+    color: var(--wrong-color);
+}
+
+.nextQuestionButton {
+    font-size: 1.2rem;
+}
+
+.gameFooterMainText {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.gameFooterSecondText {
+    font-size: 1.3rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .totalQuestions {
+        font-size: 2.5rem;
+        flex: 2;
+    }
+
+    .gameContainer {
+        flex: 8;
+    }
+
+
+    .gameFooter {
+        flex: 3;
+    }
+
+    .gameFooterMainText {
+        font-size: 1.8rem;
+    }
+
+    .gameFooterSecondText {
+        font-size: 1.5rem;
+    }
+
+    .nextQuestionButton {
+        font-size: 1.4rem;
+    }
+
+}
+
+
+@media only screen and (min-width: 1200px) {}
