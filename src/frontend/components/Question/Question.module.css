@@ -11,7 +11,7 @@
 .question {
     flex: 1;
     color: var(--fourth-color);
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 400;
     text-align: center;
     display: flex;
@@ -39,10 +39,10 @@
         149px 95px 80px rgba(0, 0, 0, 0.12);
     color: var(--second-color);
     background-color: var(--fourth-color);
-    padding: 0.9rem 1rem;
+    padding: 0.3rem 1rem;
     border-radius: var(--default-border-radius);
     border: 1rem solid transparent;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-family: 'Fredoka', sans-serif;
     cursor: pointer;
     font-weight: 500;
@@ -77,6 +77,12 @@
 
     .answer {
         width: 40%;
+        padding: 0.9rem 1rem;
+        font-size: 1.4rem;
+    }
+
+    .question {
+        font-size: 2.3rem;
     }
 }
 
